@@ -30,4 +30,8 @@ Repo ini berisi model untuk penyisihan BDC 2026 - Klasifikasi Multiclass gambar 
 5. `model.ipynb` - Notebook berisi model yang digunakan dalam training
    1. Pipeline
    2. Resnet50 (Baseline)
+   3. EfficientNet_B3
+   4. ConvNext_Tiny
+   5. Swin_T
+   6. Testing & Submission
 
