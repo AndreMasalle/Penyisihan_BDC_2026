@@ -1,7 +1,7 @@
 # BDC 2026
 
 | Nama Anggota | Asal Universitas   |
-|--------------|--------------------|
+|--------------|--------------------| 
 | Darel Ajni Fahrezi          | Universitas Telkom |
 | Ramadhan Abdul Aziz         | Universitas Telkom       |
 | Andre Fransiscus Masalle       | Universitas Telkom       |
@@ -35,3 +35,21 @@ Repo ini berisi model untuk penyisihan BDC 2026 - Klasifikasi Multiclass gambar 
    5. Swin_T
    6. Testing & Submission
 
+### Inference Real-Time (Webcam)
+
+Script `inference.py` digunakan untuk klasifikasi sampah secara real-time lewat webcam menggunakan model Swin-T yang sudah di-train.
+
+**Cara pakai:**
+
+```bash
+python inference.py
+```
+
+Pastikan file model `swin_t.pth` sudah ada di root folder sebelum menjalankan script. Tekan **`q`** di window kamera untuk keluar.
+
+**Kelas yang dideteksi:**
+- Electronic (sampah elektronik)
+- Organic (sampah organik)
+- Recyclable (sampah daur ulang)
+
+**Tampilan overlay:** label prediksi, confidence score, dan FPS counter ditampilkan di bagian atas frame kamera.
